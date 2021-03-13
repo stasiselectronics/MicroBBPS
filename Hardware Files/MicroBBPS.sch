@@ -603,23 +603,8 @@ F 3 "" H 7000 3700 50  0001 C CNN
 	1    7000 3700
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:VS #PWR0122
-U 1 1 5FFAC7ED
-P 6650 3700
-F 0 "#PWR0122" H 6450 3550 50  0001 C CNN
-F 1 "VS" H 6665 3873 50  0000 C CNN
-F 2 "" H 6650 3700 50  0001 C CNN
-F 3 "" H 6650 3700 50  0001 C CNN
-	1    6650 3700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6650 4150 6650 3700
 Wire Wire Line
 	6800 4050 7250 4050
-Wire Wire Line
-	6650 4150 7250 4150
 Wire Wire Line
 	6750 3200 7200 3200
 Wire Wire Line
@@ -718,4 +703,58 @@ Wire Wire Line
 Wire Wire Line
 	4050 5000 3750 5000
 Connection ~ 3750 5000
+$Comp
+L Connector_Generic:Conn_01x06 J1
+U 1 1 603906C3
+P 12950 250
+F 0 "J1" H 13030 242 50  0000 L CNN
+F 1 "Conn_01x06" H 13030 151 50  0000 L CNN
+F 2 "MicroBBPS:Breadboard_Row_35" H 12950 250 50  0001 C CNN
+F 3 "~" H 12950 250 50  0001 C CNN
+	1    12950 250 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12750 150  12300 150 
+Text Label 12300 150  0    50   ~ 0
+VoutLeft
+Wire Wire Line
+	12750 650  12300 650 
+$Comp
+L power:GND #PWR0111
+U 1 1 60398C3D
+P 12150 650
+F 0 "#PWR0111" H 12150 400 50  0001 C CNN
+F 1 "GND" H 12155 477 50  0000 C CNN
+F 2 "" H 12150 650 50  0001 C CNN
+F 3 "" H 12150 650 50  0001 C CNN
+	1    12150 650 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12150 650  12150 450 
+Wire Wire Line
+	12150 450  12750 450 
+Wire Wire Line
+	12750 50   12150 50  
+Wire Wire Line
+	12150 50   12150 450 
+Connection ~ 12150 450 
+Wire Wire Line
+	6650 4150 7250 4150
+Wire Wire Line
+	6650 4150 6650 3700
+$Comp
+L power:VS #PWR0122
+U 1 1 5FFAC7ED
+P 6650 3700
+F 0 "#PWR0122" H 6450 3550 50  0001 C CNN
+F 1 "VS" H 6665 3873 50  0000 C CNN
+F 2 "" H 6650 3700 50  0001 C CNN
+F 3 "" H 6650 3700 50  0001 C CNN
+	1    6650 3700
+	1    0    0    -1  
+$EndComp
+Text Label 12650 550  2    50   ~ 0
+VoutRight
 $EndSCHEMATC
