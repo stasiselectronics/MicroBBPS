@@ -494,9 +494,9 @@ Wire Wire Line
 	7600 3200 7950 3200
 Wire Wire Line
 	7650 4050 8000 4050
-Text Label 7950 3200 2    50   ~ 0
-VoutLeft
 Text Label 8000 4050 2    50   ~ 0
+VoutLeft
+Text Label 7950 3200 2    50   ~ 0
 VoutRight
 Wire Wire Line
 	7200 3100 6950 3100
@@ -673,7 +673,7 @@ U 1 1 603906C3
 P 12950 250
 F 0 "J1" H 13030 242 50  0000 L CNN
 F 1 "Conn_01x06" H 13030 151 50  0000 L CNN
-F 2 "MicroBBPS:Breadboard_Row_35" H 12950 250 50  0001 C CNN
+F 2 "MicroBBPS:Breadboard_Row_25" H 12950 250 50  0001 C CNN
 F 3 "~" H 12950 250 50  0001 C CNN
 	1    12950 250 
 	1    0    0    -1  
