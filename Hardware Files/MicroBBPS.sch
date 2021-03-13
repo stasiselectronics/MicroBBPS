@@ -172,8 +172,6 @@ Voltage Regulation
 Wire Wire Line
 	2350 1600 2350 1500
 Wire Wire Line
-	4200 1600 4400 1600
-Wire Wire Line
 	4650 1600 4650 1500
 Connection ~ 4400 1600
 Wire Wire Line
@@ -280,22 +278,6 @@ F 3 "" H 2350 1500 50  0001 C CNN
 	1    2350 1500
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:Polyfuse F1
-U 1 1 5FFCE7B3
-P 4050 1600
-F 0 "F1" V 3825 1600 50  0000 C CNN
-F 1 "Polyfuse" V 3916 1600 50  0000 C CNN
-F 2 "Fuse:Fuse_1206_3216Metric" H 4100 1400 50  0001 L CNN
-F 3 "~" H 4050 1600 50  0001 C CNN
-F 4 "TECHFUSE" H 4050 1600 50  0001 C CNN "MF 1"
-F 5 "nSMD050-24V" H 4050 1600 50  0001 C CNN "MF 1 MPN"
-F 6 "C70076" H 4050 1600 50  0001 C CNN "MF 1 Ordering Code"
-	1    4050 1600
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	3800 1600 3900 1600
 Wire Wire Line
 	3500 2100 4400 2100
 $Comp
@@ -312,8 +294,6 @@ F 6 "C107186" H 4400 3150 50  0001 C CNN "MF 1 Ordering Code"
 	1    4400 3150
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4200 2900 4400 2900
 Wire Wire Line
 	4650 2900 4650 2800
 Connection ~ 4400 2900
@@ -332,22 +312,6 @@ F 3 "" H 4650 2800 50  0001 C CNN
 	1    4650 2800
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:Polyfuse F2
-U 1 1 5FFD7EC9
-P 4050 2900
-F 0 "F2" V 3825 2900 50  0000 C CNN
-F 1 "Polyfuse" V 3916 2900 50  0000 C CNN
-F 2 "Fuse:Fuse_1206_3216Metric" H 4100 2700 50  0001 L CNN
-F 3 "~" H 4050 2900 50  0001 C CNN
-F 4 "TECHFUSE" H 4050 2900 50  0001 C CNN "MF 1"
-F 5 "nSMD050-24V" H 4050 2900 50  0001 C CNN "MF 1 MPN"
-F 6 "C70076" H 4050 2900 50  0001 C CNN "MF 1 Ordering Code"
-	1    4050 2900
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	3800 2900 3900 2900
 Text Notes 8400 1000 0    118  ~ 0
 Output Connectors
 $Comp
@@ -719,7 +683,7 @@ Wire Wire Line
 Text Label 12300 150  0    50   ~ 0
 VoutLeft
 Wire Wire Line
-	12750 650  12300 650 
+	12750 550  12650 550 
 $Comp
 L power:GND #PWR0111
 U 1 1 60398C3D
@@ -757,4 +721,30 @@ F 3 "" H 6650 3700 50  0001 C CNN
 $EndComp
 Text Label 12650 550  2    50   ~ 0
 VoutRight
+$Comp
+L Connector_Generic:Conn_02x03_Counter_Clockwise J3
+U 1 1 604F4602
+P 6750 5150
+F 0 "J3" H 6800 5467 50  0000 C CNN
+F 1 "Conn_02x03_Counter_Clockwise" H 6800 5376 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 6750 5150 50  0001 C CNN
+F 3 "~" H 6750 5150 50  0001 C CNN
+	1    6750 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x03_Counter_Clockwise J4
+U 1 1 604F4ECD
+P 8100 5150
+F 0 "J4" H 8150 5467 50  0000 C CNN
+F 1 "Conn_02x03_Counter_Clockwise" H 8150 5376 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 8100 5150 50  0001 C CNN
+F 3 "~" H 8100 5150 50  0001 C CNN
+	1    8100 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 2900 4400 2900
+Wire Wire Line
+	3800 1600 4400 1600
 $EndSCHEMATC
