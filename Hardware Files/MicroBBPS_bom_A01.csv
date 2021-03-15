@@ -1,0 +1,31 @@
+Component,Description,Part,References,Value,Footprint,Quantity Per PCB,Datasheet,MF 1 MPN,MF 1 Ordering Code,MF 1
+1,Polarized capacitor,CP,C5 C7,10µF 16V,CP_Elec_4x5.4,2,~,EEEHA1C100R,C128465,Panasonic
+2,Unpolarized capacitor,C,C1 C2 C3 C4,220nF 50V,C_1206_3216Metric_Pad1.33x1.80mm_HandSolder,4,~,CC1206KKX7R9BB224,C107186,YAGEO
+3,Polarized capacitor,CP,C6 C8,47µF 10V,CP_Elec_4x5.4,2,~,RVT1A470M0405,C72513,ROQANG
+4,Diode,D,D2,D,D_SMA,1,~,S1G-13-F,C85102,Diodes Incorporated
+5,Light emitting diode,LED,D1 D3,LED,HL-A-3528S7VC-S1-13HL,2,~,HL-A-3528S7VC-S1-13HL,C516136,HONGLITRONIC
+6,"Resettable fuse, polymeric positive temperature coefficient",Polyfuse,F1 F2,Polyfuse,Fuse_1206_3216Metric,2,~,nSMD050-24V,C70076,TECHFUSE
+7,,3PoleHeaderSwitch,J8 J9,3PoleHeaderSwitch,3PoleHeaderSwitch,2,,PZ254V-12-6P,C492420,XFCN
+8,"Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)",Conn_01x02,J5,Conn_01x02,WJ124-3.81-2P,1,~,WJ128V-5.0-2P,C8269,Ningbo Kangnex Elec
+9,USB Micro Type B connector,USB_B_Micro,J2,USB_B_Micro,U-F-M5DD-Y-L,1,~,U-F-M5DD-Y-L,C91146,Korean Hroparts Elec
+10,"Generic connector, double row, 02x04, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)",Conn_02x04_Odd_Even,Left1 Right1,Conn_02x04_Counter_Clockwise,PinHeader_2x04_P2.54mm_Vertical,2,~,PZ254V-12-8P,C492421,XFCN
+11,Resistor,R,R2,0R,R_1206_3216Metric_Pad1.30x1.75mm_HandSolder,1,~,RC1206JR-7W0RL,C723430,YAGEO
+12,Resistor,R,R1,56R 0.25W,R_1206_3216Metric_Pad1.30x1.75mm_HandSolder,1,~,RC1206JR-0756RL,C134080,YAGEO
+13,"1A 20V Fixed LDO Linear Regulator, 3.3V, SOT-89/SOT-223/TO-220/TO-252/TO-263",AZ1117-3.3,U3,NCP1117ST33T3G,SOT-223-3_TabPin2,1,https://www.diodes.com/assets/Datasheets/AZ1117.pdf,NCP1117ST33T3G,C26537,ON Semiconductor
+14,"1A Low Dropout regulator, positive, 5.0V fixed output, SOT-223",AMS1117-5.0,U1,NCP1117ST50T3G,SOT-223-3_TabPin2,1,http://www.advanced-monolithic.com/pdf/ds1117.pdf,NCP1117ST50T3G,C17314,ON Semiconductor
+
+
+
+
+
+Component Groups:,14
+Component Count:,23
+Fitted Components:,23
+Number of PCBs:,1
+Total components:,23
+Schematic Version:,A01
+Schematic Date:,
+PCB Variant:,[u'default']
+BoM Date:,01/09/21 19:21:22
+Schematic Source:,MicroBBPS.sch
+KiCad Version:,Eeschema (5.1.7)-1
