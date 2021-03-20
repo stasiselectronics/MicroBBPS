@@ -667,43 +667,6 @@ Wire Wire Line
 Wire Wire Line
 	4050 5000 3750 5000
 Connection ~ 3750 5000
-$Comp
-L Connector_Generic:Conn_01x06 J1
-U 1 1 603906C3
-P 12950 250
-F 0 "J1" H 13030 242 50  0000 L CNN
-F 1 "Conn_01x06" H 13030 151 50  0000 L CNN
-F 2 "MicroBBPS:Breadboard_Row_25" H 12950 250 50  0001 C CNN
-F 3 "~" H 12950 250 50  0001 C CNN
-	1    12950 250 
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	12750 150  12300 150 
-Text Label 12300 150  0    50   ~ 0
-VoutLeft
-Wire Wire Line
-	12750 550  12650 550 
-$Comp
-L power:GND #PWR0111
-U 1 1 60398C3D
-P 12150 650
-F 0 "#PWR0111" H 12150 400 50  0001 C CNN
-F 1 "GND" H 12155 477 50  0000 C CNN
-F 2 "" H 12150 650 50  0001 C CNN
-F 3 "" H 12150 650 50  0001 C CNN
-	1    12150 650 
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	12150 650  12150 450 
-Wire Wire Line
-	12150 450  12750 450 
-Wire Wire Line
-	12750 50   12150 50  
-Wire Wire Line
-	12150 50   12150 450 
-Connection ~ 12150 450 
 Wire Wire Line
 	6650 4150 7250 4150
 Wire Wire Line
@@ -719,32 +682,116 @@ F 3 "" H 6650 3700 50  0001 C CNN
 	1    6650 3700
 	1    0    0    -1  
 $EndComp
-Text Label 12650 550  2    50   ~ 0
-VoutRight
 $Comp
-L Connector_Generic:Conn_02x03_Counter_Clockwise J3
+L Connector_Generic:Conn_02x03_Odd_Even J3
 U 1 1 604F4602
 P 6750 5150
 F 0 "J3" H 6800 5467 50  0000 C CNN
-F 1 "Conn_02x03_Counter_Clockwise" H 6800 5376 50  0000 C CNN
+F 1 "Conn_02x03" H 6800 5376 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 6750 5150 50  0001 C CNN
 F 3 "~" H 6750 5150 50  0001 C CNN
 	1    6750 5150
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 $Comp
-L Connector_Generic:Conn_02x03_Counter_Clockwise J4
+L Connector_Generic:Conn_02x03_Odd_Even J4
 U 1 1 604F4ECD
-P 8100 5150
-F 0 "J4" H 8150 5467 50  0000 C CNN
-F 1 "Conn_02x03_Counter_Clockwise" H 8150 5376 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 8100 5150 50  0001 C CNN
-F 3 "~" H 8100 5150 50  0001 C CNN
-	1    8100 5150
-	1    0    0    -1  
+P 8950 5150
+F 0 "J4" H 9000 5467 50  0000 C CNN
+F 1 "Conn_02x03" H 9000 5376 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 8950 5150 50  0001 C CNN
+F 3 "~" H 8950 5150 50  0001 C CNN
+	1    8950 5150
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	3800 2900 4400 2900
 Wire Wire Line
 	3800 1600 4400 1600
+Text Label 7250 5050 0    50   ~ 0
+VoutLeft
+Wire Wire Line
+	7250 5050 7150 5050
+Wire Wire Line
+	7150 5050 7150 5150
+Wire Wire Line
+	7150 5150 7050 5150
+Connection ~ 7150 5050
+Wire Wire Line
+	7150 5050 7050 5050
+Wire Wire Line
+	7050 5250 7150 5250
+Wire Wire Line
+	7150 5250 7150 5150
+Connection ~ 7150 5150
+$Comp
+L power:GND #PWR0112
+U 1 1 6056F5B2
+P 6250 5350
+F 0 "#PWR0112" H 6250 5100 50  0001 C CNN
+F 1 "GND" H 6255 5177 50  0000 C CNN
+F 2 "" H 6250 5350 50  0001 C CNN
+F 3 "" H 6250 5350 50  0001 C CNN
+	1    6250 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 5350 6250 5250
+Wire Wire Line
+	6250 5250 6450 5250
+Wire Wire Line
+	6550 5150 6450 5150
+Wire Wire Line
+	6450 5150 6450 5250
+Connection ~ 6450 5250
+Wire Wire Line
+	6450 5250 6550 5250
+Wire Wire Line
+	6550 5050 6450 5050
+Wire Wire Line
+	6450 5050 6450 5150
+Connection ~ 6450 5150
+Wire Wire Line
+	9450 5050 9350 5050
+Wire Wire Line
+	9350 5050 9350 5150
+Wire Wire Line
+	9350 5150 9250 5150
+Connection ~ 9350 5050
+Wire Wire Line
+	9350 5050 9250 5050
+Wire Wire Line
+	9250 5250 9350 5250
+Wire Wire Line
+	9350 5250 9350 5150
+Connection ~ 9350 5150
+$Comp
+L power:GND #PWR0115
+U 1 1 6057EB99
+P 8450 5350
+F 0 "#PWR0115" H 8450 5100 50  0001 C CNN
+F 1 "GND" H 8455 5177 50  0000 C CNN
+F 2 "" H 8450 5350 50  0001 C CNN
+F 3 "" H 8450 5350 50  0001 C CNN
+	1    8450 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8450 5350 8450 5250
+Wire Wire Line
+	8450 5250 8650 5250
+Wire Wire Line
+	8750 5150 8650 5150
+Wire Wire Line
+	8650 5150 8650 5250
+Connection ~ 8650 5250
+Wire Wire Line
+	8650 5250 8750 5250
+Wire Wire Line
+	8750 5050 8650 5050
+Wire Wire Line
+	8650 5050 8650 5150
+Connection ~ 8650 5150
+Text Label 9450 5050 0    50   ~ 0
+VoutRight
 $EndSCHEMATC
