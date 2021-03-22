@@ -22,7 +22,7 @@ I plan on attempting to make A02 boards available to purchase on [Tindie](https:
 ## Updates
 If you would like to keep up to date with this project, be sure to check out my instagram
 
-<h3><a href="instagram.com/stasis.electronics">stasis.electronics</a></h3>
+<h3><a href="https://www.instagram.com/stasis.electronics/">stasis.electronics</a></h3>
 
 ### A01 Fabrication
 Here are some photos of the first board revision
