@@ -26,3 +26,8 @@ If you would like to keep up to date with this project, be sure to check out my 
 
 ### A01 Fabrication
 Here are some photos of the first board revision
+<p align="center">
+  <img src="https://github.com/stasiselectronics/MicroBBPS/blob/main/Hardware%20Files/Images/IMG_8818.jpg" width="30%" />
+  <img src="https://github.com/stasiselectronics/MicroBBPS/blob/main/Hardware%20Files/Images/IMG_8837.jpg" width="30%" /> 
+  <img src="https://github.com/stasiselectronics/MicroBBPS/blob/main/Hardware%20Files/Images/IMG_8844.jpg" width="30%" />
+</p>
