@@ -1,5 +1,5 @@
 # MicroBBPS 
-### Breadboard Powersupply
+<h3>Breadboard Powersupply</h3>
 
 A selectable power supply perfect for powering experimental circuits with a micro USB cable or with a 20V max DC screw terminal.
 
@@ -20,5 +20,9 @@ The PCBA is currently at Revision A02 with boards and parts on order.
 I plan on attempting to make A02 boards available to purchase on [Tindie](https://www.tindie.com/stores/stasis/)
 
 ## Updates
-Here's some the latest updates
-###
+If you would like to keep up to date with this project, be sure to check out my instagram
+
+<h3><a href="instagram.com/stasis.electronics">stasis.electronics</a></h3>
+
+### A01 Fabrication
+Here are some photos of the first board revision
