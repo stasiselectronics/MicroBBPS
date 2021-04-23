@@ -8,18 +8,18 @@ header:
   overlay_image: /assets/images/splash.jpg
   actions:
     - label: "View Source on Github"
-      url: "https://github.com/ChandlerMcCowan/MicroBBPS/"
+      url: "https://github.com/stasiselectronics/MicroBBPS"
 excerpt: "Open Source Hardware to easily add Micro USB power to your next breadboard project"
 
 feature_row:
-  - image_path: /assets/images/unsplash-gallery-image-3-th.jpg
+  - image_path: /assets/images/unsplash-gallery-image-1-th.jpg
     caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
     title: "Buy on Tindie"
     excerpt: "Purchase your very own on the Tindie page for this project."
     url: "about"
     btn_label: "Buy Now"
     btn_class: "btn--primary"
-  - image_path: /assets/images/unsplash-gallery-image-1-th.jpg
+  - image_path: /assets/images/unsplash-gallery-image-3-th.jpg
     caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
     alt: "Documentation"
     title: "Documentation"
