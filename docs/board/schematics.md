@@ -6,11 +6,20 @@ author_profile: false
 sidebar:
   nav: "docs"
 ---
-Here is where you can place the schematics of the project. They should be displayed as pdf
+The schematics for this project are very straight forward. Both the original Micro BBPS and the integrated version share the exact same schematics.
 
-You can include the pdfs like this
-```html
-<iframe width="100%" height="600px" src="<project name>/docs/board/assets/schematics.pdf"></iframe>
-```
-<iframe width="100%" height="600px" src="/Hardware-Pages-Template/docs/board/assets/ESP32MiniDrop_Schematics_A02.pdf"></iframe>
+## Input Connectors
 
+![Input Connectors]({{site.baseurl}}/docs/board/assets/schematic_input.png){: .align-center}
+
+## Voltage Regulators
+
+![Voltage Regulators]({{site.baseurl}}/docs/board/assets/schematic_regulators.png){: .align-center}
+
+## Power Filtering
+
+![Power Filtering]({{site.baseurl}}/docs/board/assets/schematic_filter.png){: .align-center}
+
+## Output
+
+![Output Connectors]({{site.baseurl}}/docs/board/assets/schematic_output.png){: .align-center}

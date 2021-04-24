@@ -13,14 +13,12 @@ excerpt: "Open Source Hardware to easily add Micro USB power to your next breadb
 
 feature_row:
   - image_path: /assets/images/unsplash-gallery-image-1-th.jpg
-    caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
     title: "Buy on Tindie"
     excerpt: "Purchase your very own on the Tindie page for this project."
     url: "about"
     btn_label: "Buy Now"
     btn_class: "btn--primary"
   - image_path: /assets/images/unsplash-gallery-image-3-th.jpg
-    caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
     alt: "Documentation"
     title: "Documentation"
     url: "docs"
@@ -28,8 +26,6 @@ feature_row:
     btn_label: "Read the docs"
     btn_class: "btn--primary"
   - image_path: /assets/images/unsplash-gallery-image-2-th.jpg
-    caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
-    image_caption: "Image courtesy of [Unsplash](https://unsplash.com/)"
     alt: "Photo Gallery"
     title: "Photo Gallery"
     excerpt: "See the development of this project and other photos"
