@@ -6,4 +6,7 @@ author_profile: false
 sidebar:
   nav: "docs"
 ---
-Maybe here you can explain the layout decisions that were made for the design. Highlight any critical features, or something that you would want to show off.
+The PCB Design began with a focus on matching the spacing of a standard solderless breadboard, and then replicating that spacing for the integrated version.
+
+## Size
+![Board Layout]({{site.baseurl}}/docs/board/assets/layout_size_top.png){: .align-center}
