@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Micro Breadboard Power Supply
-email: 
+email:
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
@@ -60,33 +60,33 @@ plugins:
 author:
   name   : "Stasis Electronics"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "Open Source Hardware Project Page Template. Here you can find all the documentation, development posts, and links to source files"
+  bio    : "Open Source Hardware Design"
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    # Feel free to add more links here
-    #- label: "Website"
-    #  icon: "fas fa-fw fa-link"
-    #  url: "https://"
-    #- label: "Twitter"
-    #  icon: "fab fa-fw fa-twitter-square"
-    #  url: "https://twitter.com/"
-    #- label: "Instagram"
-    #  icon: "fab fa-fw fa-instagram"
-    #  url: "https://instagram.com/"
+      url: "https://www.instagram.com/stasis.electronics/"
+    - label: "Store"
+      icon: "fas fa-store"
+      url: "https://www.tindie.com/stores/stasis/items/"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://instagram.com/stasis.electroincs"
 
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
+      url: "https://github.com/stasiselectronics"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      url: "https://www.instagram.com/stasis.electronics/"
+    - label: "Store"
+      icon: "fas fa-store"
+      url: "https://www.tindie.com/stores/stasis/items/"
+
+
+atom_feed:
+  hide: true
 
 defaults:
   # _posts
@@ -96,9 +96,9 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: true
-      comments: true
-      share: true
+      read_time: false
+      comments: false
+      share: false
       related: true
   # _pages
   - scope:

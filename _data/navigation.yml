@@ -1,18 +1,24 @@
 main:
   - title: "Docs"
     url: /docs/
-  - title: "Blog"
-    url: /blog/
+  - title: "Quick Start"
+    url: /docs/quick-start/
   - title: "About"
     url: /about/
-    
+  - title: "Gallery"
+    url: /gallery/
+  - title: "Source"
+    url: "https://github.com/stasiselectronics/MicroBBPS"
+  - title: "Buy"
+    url: "https://www.tindie.com/stores/stasis/items/"
+
 docs:
     - title: Getting Started
       children:
         - title: "Quick Start Guide"
           url: /docs/quick-start/
 
-    
+
     - title: Hardware
       children:
         - title: "Schematics"
@@ -23,12 +29,3 @@ docs:
           url: /docs/board/assembly/
         - title: "Components"
           url: /docs/board/components/
-
-    - title: Enclosure
-      children:
-        - title: "3D printing"
-          url: /docs/enclosure/3d-printing/
-        - title: "Drawings"
-          url: /docs/enclosure/drawings/
-        - title: "Assembly"
-          url: /docs/enclosure/assembly/
