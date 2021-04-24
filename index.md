@@ -39,39 +39,28 @@ feature_row:
 
 This website is inteded to serve as a companion to the source files for this project. Make sure to check out the [repository](https://github.com/stasiselectronics/MicroBBPS) to see the design files.
 
+## Features
+- Micro USB connector for easy power
+- Screw Terminal for bare wires
+- Max 20V DC input on screw terminal
+- Power Output Selection between Vin, 3.3V, and 5.0V
+- Max 1A on each voltage regulator
+
 There are two versions of this design:
 
-<style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{border-color:black;border-style:solid;border-width:0px;font-family:Arial, sans-serif;font-size:14px;
-  overflow:hidden;padding:15px 20px;word-break:normal;}
-.tg th{border-color:black;border-style:solid;border-width:0px;font-family:Arial, sans-serif;font-size:14px;
-  font-weight:normal;overflow:hidden;padding:15px 20px;word-break:normal;}
-.tg .tg-su5e{border-color:#ffffff;font-family:"Lucida Console", Monaco, monospace !important;;font-size:x-large;text-align:left;
-  vertical-align:middle}
-.tg .tg-q30b{border-color:#ffffff;font-family:"Lucida Console", Monaco, monospace !important;;text-align:left;vertical-align:middle}
-</style>
-<table class="tg">
-<thead>
-  <tr>
-    <th class="tg-su5e">Solderless</th>
-    <th class="tg-q30b">This smaller board is designed to be inserted onto the power rails of a standard solderless breadboard. This gives great flexibility for when you're experimenting.</th>
-    <th class="tg-q30b">link</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td class="tg-su5e">Integrated</td>
-    <td class="tg-q30b">This version has the exact same components as the solderless version, but includes 26 rows of breadboard connections so you can turn your experiments into a robust prototype. </td>
-    <td class="tg-q30b">link</td>
-  </tr>
-</tbody>
-</table>
+## Solderless
+This smaller board is designed to be inserted onto the power rails of a standard solderless breadboard. This gives great flexibility for when you're experimenting.
 
-solderless and integrated.
+<figure style="max-width: 400px;" class="align-center">
+	<a href="{{site.baseurl}}/assets/images/solderless.jpg"><img src="{{site.baseurl}}/assets/images/solderless.jpg"></a>
+</figure>
 
-The solderless version is intended to be inserted
+## Integrated
+This version has the exact same components as the solderless version, but includes 26 rows of breadboard connections so you can turn your experiments into a robust prototype.
 
+<figure style="max-width: 400px;" class="align-center">
+	<a href="{{site.baseurl}}/assets/images/integrated1.jpg"><img src="{{site.baseurl}}/assets/images/integrated1.jpg"></a>
+</figure>
 
 
 {% include feature_row %}
