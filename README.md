@@ -1,5 +1,5 @@
 # MicroBBPS
-<h3> Integrated Micro Breadboard Power Supply
+<h3> Integrated Micro Breadboard Power Supply</h3>
   
 Here is the repository for the integrated version of the MicroBBPS. This design shares the same schematic design, and the same component placement as the solderless version. 
 
