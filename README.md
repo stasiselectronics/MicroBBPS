@@ -7,6 +7,6 @@ What makes this design special is that it has 26 rows of breadboard spaced plate
 
 If you want to learn more about this particular version, be sure to check out the documentation webiste.
 
-<h3><a href="https://github.com/stasiselectronics/MicroBBPS/tree/variant-integrated">Read the Docs</a></h3>
+<h3><a href="https://stasiselectronics.github.io/MicroBBPS/">Read the Docs</a></h3>
 
-<h4><a href="https://github.com/stasiselectronics/MicroBBPS/tree/variant-integrated">Back to the solderless version repository</a></h4>
+<h4><a href="https://github.com/stasiselectronics/MicroBBPS/tree/main">Back to the solderless version repository</a></h4>
