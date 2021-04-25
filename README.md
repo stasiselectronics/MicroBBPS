@@ -1,4 +1,12 @@
 # MicroBBPS
-Small breadboard power supply that offers 5V, 3.3V, UART, and current sensing.
+<h3> Integrated Micro Breadboard Power Supply
+  
+Here is the repository for the integrated version of the MicroBBPS. This design shares the same schematic design, and the same component placement as the solderless version. 
 
-I wanted to build a small power supply that takes advantage of a USB to UART bridge so you can use serial communication with any breadboard IC, while also powering the breadboard.
+What makes this design special is that it has 26 rows of breadboard spaced plated through holes. This means you can take your breadboard experiments and directly transfer them to the integrated MicroBBPS to build a robust prototype that has easy power entry.
+
+If you want to learn more about this particular version, be sure to check out the documentation webiste.
+
+<h3><a href="https://github.com/stasiselectronics/MicroBBPS/tree/variant-integrated">Read the Docs</a></h3>
+
+<h4><a href="https://github.com/stasiselectronics/MicroBBPS/tree/variant-integrated">Back to the solderless version repository</a></h4>
