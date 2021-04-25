@@ -7,7 +7,7 @@ Select between LDO Linear regulated 3.3V, 5V, or Screw Terminal input for either
 
 The integrated version adds 26 breadboard rows and 2 continuous power rails. Turn those prototypes into something more permanent with an easy microUSB power connector.
 
-<h3><a href="https://github.com/stasiselectronics/MicroBBPS/tree/variant-integrated">Check out the integrated version's repository branch</a></h3>
+<h4><a href="https://github.com/stasiselectronics/MicroBBPS/tree/variant-integrated">Check out the integrated version's repository branch</a></h4>
 
 ## Documentation
 
@@ -15,7 +15,9 @@ If you would like to read more about how the design works and see some of the te
 
 <h3><a href="https://stasiselectronics.github.io/MicroBBPS/">Read the Docs</a></h3>
 
-This site is hosted on Github Pages, a great way to deploy your own static website using jekyll. [Learn more about github pages.](https://pages.github.com/)
+This site is hosted on Github Pages, a great way to deploy your own static website using jekyll. It uses the wonderful theme [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/about/) by Michael Rose.
+
+[Learn more about github pages.](https://pages.github.com/)
 
 ## Development
 This open source hardware project is developed using KiCAD and inkscape. It exists as a schematic and pcb design, with supporting files to create the necesarry output files for Printed Circuit Board fabrication.
