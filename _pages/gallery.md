@@ -11,7 +11,7 @@ Here you can find pictures from throughout the development process. I post most 
 <figure class="half">
 {% for image in site.static_files %}
     {% if image.path contains 'images/gallery' %}
-<img style="max-width: 800px;vertical-align:middle;" src="{{ site.baseurl }}{{ image.path }}"/>
+<img style="max-width: 800px;" src="{{ site.baseurl }}{{ image.path }}"/>
     {% endif %}
 {% endfor %}
 </figure>
