@@ -29,7 +29,7 @@ feature_row:
     alt: "Photo Gallery"
     title: "Photo Gallery"
     excerpt: "See the development of this project and other photos"
-    url: "blog"
+    url: "gallery"
     btn_label: "See More"
     btn_class: "btn--primary"
 ---
@@ -48,19 +48,30 @@ This website is inteded to serve as a companion to the source files for this pro
 
 There are two versions of this design:
 
-## Solderless
-This smaller board is designed to be inserted onto the power rails of a standard solderless breadboard. This gives great flexibility for when you're experimenting.
 
-<figure style="max-width: 400px;" class="align-center">
-	<a href="{{site.baseurl}}/assets/images/solderless.jpg"><img src="{{site.baseurl}}/assets/images/solderless.jpg"></a>
-</figure>
+<div style="clear: both;">
+  <div style="float: left; margin-right 3em;">
+    <img style="max-width: 400px" src="{{site.baseurl}}/assets/images/solderless.jpg" alt="">
+  </div>
+  <div>
+    <h2>Solderless</h2>
+    <p>This smaller board is designed to be inserted onto the power rails of a standard solderless breadboard. This gives great flexibility for when you're experimenting.</p>
+    <br>
+    <p><a href="https://github.com/stasiselectronics/MicroBBPS">View Repository Branch</a></p>
+  </div>
+</div>
 
-## Integrated
-This version has the exact same components as the solderless version, but includes 26 rows of breadboard connections so you can turn your experiments into a robust prototype.
-
-<figure style="max-width: 400px;" class="align-center">
-	<a href="{{site.baseurl}}/assets/images/integrated1.jpg"><img src="{{site.baseurl}}/assets/images/integrated1.jpg"></a>
-</figure>
+<div style="clear: both;">
+  <div style="float: left; margin-right 3em;">
+    <img style="max-width: 400px" src="{{site.baseurl}}/assets/images/integrated_line.jpg" alt="">
+  </div>
+  <div>
+    <h2>Integrated</h2>
+    <p>This version has the exact same components as the solderless version, but includes 26 rows of breadboard connections so you can turn your experiments into a robust prototype.</p>
+    <br>
+    <p><a href="https://github.com/stasiselectronics/MicroBBPS/tree/variant-integrated">View Repository Branch</a></p>
+  </div>
+</div>
 
 
 {% include feature_row %}
