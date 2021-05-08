@@ -120,17 +120,34 @@ The datasheet for the LEDs have some more details:
 
 ## Electrolytic Capacitors
 <figure class="half">
-	<img style="display: block;margin-left: auto;margin-right: auto;" src="{{site.baseurl}}/docs/board/assembly_assets/J5.jpg"/>
+	<img style="display: block;margin-left: auto;margin-right: auto;" src="{{site.baseurl}}/docs/board/assembly_assets/C6 C8.jpg"/>
+  <img style="display: block;margin-left: auto;margin-right: auto;" src="{{site.baseurl}}/docs/board/assembly_assets/C5_C7.jpg"/>
 </figure>
+
 ## Header Pins
+<figure >
+	<img style="display: block;margin-left: auto;margin-right: auto;" src="{{site.baseurl}}/docs/board/assembly_assets/J3_J4.jpg"/>
+</figure>
+
+## Output Selection Pins
+<figure >
+	<img style="display: block;margin-left: auto;margin-right: auto;" src="{{site.baseurl}}/docs/board/assembly_assets/J8_J9.jpg"/>
+</figure>
 
 ## Screw Terminal
 <figure >
 	<img style="display: block;margin-left: auto;margin-right: auto;" src="{{site.baseurl}}/docs/board/assembly_assets/J5.jpg"/>
 </figure>
+
 ## Cleaning
+<figure >
+	<img style="display: block;margin-left: auto;margin-right: auto;" src="{{site.baseurl}}/docs/board/assembly_assets/J8_J9.jpg"/>
+</figure>
 
 ## Testing
+<figure >
+	<img style="display: block;margin-left: auto;margin-right: auto;" src="{{site.baseurl}}/docs/board/assembly_assets/J8_J9.jpg"/>
+</figure>
 
 
 
