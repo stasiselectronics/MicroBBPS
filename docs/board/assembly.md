@@ -68,9 +68,12 @@ Use a hot air station to help remove mistakes and try again if it's not working 
 	<img src="{{site.baseurl}}/docs/board/assembly_assets/D1_D2.jpg"/>
 </figure>
 
-### How to tell which way
+### How to tell which way is which
 
-When working with LEDs, it matters which way you put them on. The footprints will have a bit of silkscreen around them that indicates where the negative terminal should be. The figure below shows how all the markings should line up.
+When working with LEDs, it matters how you put them on. They will only work if the positive and negative terminals are correct. The footprints will have a bit of silkscreen around them that indicates where the negative terminal should be. The figure below shows how all the markings should line up.
+
+If you have put them on backwards, they shouldn't break when powered on. Just remove them and flip their orientation.
+{: .notice--warning}
 
 <figure>
 	<img style="display: block;margin-left: auto;margin-right: auto;max-width: 300px;" src="{{site.baseurl}}/docs/board/assembly_assets/D1_placement.png"/>
@@ -82,12 +85,11 @@ The datasheet for the LEDs have some more details:
 	<img style="display: block;margin-left: auto;margin-right: auto;" src="{{site.baseurl}}/docs/board/assembly_assets/D1_datasheet.jpg"/>
 </figure>
 
-<figure >
-	<img style="display: block;margin-left: auto;margin-right: auto;" src="{{site.baseurl}}/docs/board/assembly_assets/D1_closeup.jpg"/>
-</figure>
+Here we can see that green marking shows which way to mount the component on the board.
 
-<figure >
-	<img style="display: block;margin-left: auto;margin-right: auto;" src="{{site.baseurl}}/docs/board/assembly_assets/D1_soldered.jpg"/>
+<figure class = "half">
+	<img style="display: block;margin-left: auto;margin-right: auto;" src="{{site.baseurl}}/docs/board/assembly_assets/D1_closeup.jpg"/>
+  <img style="display: block;margin-left: auto;margin-right: auto;" src="{{site.baseurl}}/docs/board/assembly_assets/D1_soldered.jpg"/>
 </figure>
 
 ## Ceramic Capacitors
@@ -95,6 +97,8 @@ The datasheet for the LEDs have some more details:
 <figure >
 	<img style="display: block;margin-left: auto;margin-right: auto;" src="{{site.baseurl}}/docs/board/assembly_assets/C1_C2_C3_C4.jpg"/>
 </figure>
+
+Next up are the 200nF ceramic capacitors `C1, C2, C3, C4`. These components don't need a specifc orientation, so no need to worry about which way they are mounted.
 
 <figure >
 	<img style="display: block;margin-left: auto;margin-right: auto;" src="{{site.baseurl}}/docs/board/assembly_assets/C1_soldered_2.jpg"/>
@@ -106,23 +110,57 @@ The datasheet for the LEDs have some more details:
 	<img style="display: block;margin-left: auto;margin-right: auto;" src="{{site.baseurl}}/docs/board/assembly_assets/D2.jpg"/>
 </figure>
 
+Here is another orientation specific component. The diode `D2` provides some reverse voltage protection from the screw terminal.
+
+On the top of the component, a small line will indicate the negative terminal of the diode.
+
+<figure >
+	<img style="display: block;margin-left: auto;margin-right: auto;" src="{{site.baseurl}}/docs/board/assembly_assets/D2_soldered.jpg"/>
+</figure>
+
 ## Resistors
 <figure >
 	<img style="display: block;margin-left: auto;margin-right: auto;" src="{{site.baseurl}}/docs/board/assembly_assets/R1_R2.jpg"/>
 </figure>
 
+Like the ceramic capacitors, these can go on any way. They will be used to limit the current of the LEDs so they aren't too bright.
+
+<figure >
+	<img style="display: block;margin-left: auto;margin-right: auto;" src="{{site.baseurl}}/docs/board/assembly_assets/R1_soldered.jpg"/>
+</figure>
 
 ## Micro USB connector
 <figure >
 	<img style="display: block;margin-left: auto;margin-right: auto;" src="{{site.baseurl}}/docs/board/assembly_assets/J2.jpg"/>
 </figure>
 
+This component will be the hardest to hand solder to the board. If you have a hot air station, use that to mount this component.
+{: .notice--warning}
+
+To start, insert the component without any solder added to the footprint. Add a bit of solder to the larger mounting pads on the side. Use that to help fix the orientation so that the small interior pads are aligned properlly.
 
 ## Electrolytic Capacitors
 <figure class="half">
 	<img style="display: block;margin-left: auto;margin-right: auto;" src="{{site.baseurl}}/docs/board/assembly_assets/C6 C8.jpg"/>
   <img style="display: block;margin-left: auto;margin-right: auto;" src="{{site.baseurl}}/docs/board/assembly_assets/C5_C7.jpg"/>
 </figure>
+
+**Check Orientation**
+Make sure you check which way these parts are mounted. If incorrect, there is a strong likelyhood you will damage the parts.
+{: .notice--danger}
+
+Here the black bar represents the negative terminal. The footrpint will have a `+` symbol to indicate the positive terminal.
+
+<figure class="half" >
+	<img style="display: block;margin-left: auto;margin-right: auto;" src="{{site.baseurl}}/docs/board/assembly_assets/C5_soldered_1.jpg"/>
+  <img style="display: block;margin-left: auto;margin-right: auto;" src="{{site.baseurl}}/docs/board/assembly_assets/C6_soldered_1.jpg"/>
+</figure>
+
+## Voltage Regulators
+
+### 5 V
+
+### 3.3 V
 
 ## Header Pins
 <figure >
@@ -141,12 +179,12 @@ The datasheet for the LEDs have some more details:
 
 ## Cleaning
 <figure >
-	<img style="display: block;margin-left: auto;margin-right: auto;" src="{{site.baseurl}}/docs/board/assembly_assets/J8_J9.jpg"/>
+	<img style="display: block;margin-left: auto;margin-right: auto;" src="{{site.baseurl}}/docs/board/assembly_assets/cleaning_1.jpg"/>
 </figure>
 
 ## Testing
 <figure >
-	<img style="display: block;margin-left: auto;margin-right: auto;" src="{{site.baseurl}}/docs/board/assembly_assets/J8_J9.jpg"/>
+	<img style="display: block;margin-left: auto;margin-right: auto;" src="{{site.baseurl}}/docs/board/assembly_assets/assembly_3.jpg"/>
 </figure>
 
 
