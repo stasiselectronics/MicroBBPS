@@ -8,195 +8,131 @@ sidebar:
 ---
 
 <figure style="max-width: 400px;" class="align-center">
-	<a href="{{site.baseurl}}/docs/board/assets/assembly/parts.jpg"><img src="{{site.baseurl}}/docs/board/assets/assembly/parts.jpg"></a>
+	<img src="{{site.baseurl}}/docs/board/assembly_assets/loose_components.jpg"/>
 </figure>
 
-Once you've gotten your parts kit opened, it's time to assemble your very own 8 Bit WiFi Visualizer board!
+Once you've gotten your parts kit opened, it's time to assemble your very own Micro Breadboard Power Supply!
+
+The components and layout are identical between the solderless version and the integrated version, except for the lack of pin headers J3 & J4 on the integrated version.
 
 ## Tools Needed
 Before you begin soldering, make sure to gather your tools. It's no fun to have your hands tied up and then realize the next tool you need is packed away somewhere (or worse, at the store!).
 
 | Required  |  |
 |:---:|:-|
-| **Soldering Iron** | If you have a soldering iron with a fine tip, that is preferred, however you can make do with a moderately sized tip.
-| **Solder** | Make sure to have a solder that is thin enough. It should be less than 0.5 mm, with 0.3 mm being ideal.
-| **Fine Tip Tweezers** | SMD parts are small, make sure you have something that can pick them up and move them around.
+| **Soldering Iron** | If you have a soldering iron with a fine tip, that is preferred, however you can make do with a moderately sized tip. If it's too big you might find difficulty with soldeing the surface mount components. I keep mine at 410 deg C for ROHS solder.
+| **Solder** | Make sure to have a solder that is thin enough. It should be less than 0.5 mm, with 0.3 mm being ideal. Too large and you'll find it too easy to add too much. Large solder is useful for the through hole components.
+| **Fine Tip Tweezers** | SMD parts are small, make sure you have something that can pick them up and move them around. A second pair can help make fine adjustments to SMD placements.
 | **Flux** | Rosin based flux will help make sure all your solder joints are strong and hassle free.
 
 | Optional  |  |
 |:---:|:-|
-| **Magnification** | Ideally a stereo microscope, but a magnifying glass can be better than no magnifaction. Young eyes help too, but those can't be bought.
+| **Vice** | Something to hold down the PCB can be nice. There are a few different PCB vises out there, or try and DIY something taht works.
+| **Magnification** | Ideally a stereo microscope or zoom camera, but a magnifying glass can be better than no magnifaction. Young eyes help too, but those can't be bought.
 | **Hot Air Station** | This makes removing parts a snap if mistakes were made. It can also be used to position parts using the liquid solder's surface tension.
 | **Solder Paste** | Using a hot air station with solder paste can make assembly a breeze.
 | **Stencil** | A piece of metal with holes cut out for where the solder paste can be scraped over. Most PCB fabricators offer stencils for a relatively small fee.
 
+
 Using a stencil? [Jump to Instructions]({{site.baseurl}}/docs/board/assembly/#using-a-stencil)
 
-## Solder the WiFi module
+## Getting Started
+
+Now that you've got all the parts and tools, we can start hand soldering the SMD components.
+
+I threw together an improvised holder for the PCB using a tea saucer, masking tape, and closed cell foam. By wrapping the tape inside out, you can have a sticky band to attach the board to the stable tea saucer base. Rotating the suacer instead of the board helps keep things secured and easy to reach.
 
 <figure style="max-width: 400px;" class="align-center">
-	<a href="{{site.baseurl}}/docs/board/assets/assembly/esp32_packaged.jpg"><img src="{{site.baseurl}}/docs/board/assets/assembly/esp32_packaged.jpg"></a>
+  <img src="{{site.baseurl}}/docs/board/assembly_assets/base_board_1.jpg"/>
 </figure>
 
-Start off with soldering the ESP-WROOM-02 WiFi module. This will help get the largest device on the board first without any other component getting in the way.
+The general approach to soldering is to follow this method:
 
-### Tape the module down
+|:-:|:-|
+| **1** | attach some solder to one pad of the footprint |
+| **2** | bring component relatively close to the footprint |
+| **3** | touch the pad with solder and reflow with Iron |
+| **4** | bring component onto footprint and align pads |
+| **5** | remove iron and allow to cool |
+| **6** | add solder to the remaining pads |
 
-<figure style="max-width: 400px;" class="align-center">
-	<a href="{{site.baseurl}}/docs/board/assets/assembly/esp32_taped.jpg"><img src="{{site.baseurl}}/docs/board/assets/assembly/esp32_taped.jpg"></a>
-</figure>
-
-
-Using masking tape (or other low-tac tape), position the WiFi module so that the castellated pads match up with the pads on the board. You can also use the silkscreen to position the module correctly.
-
-<figure style="max-width: 400px;" class="align-center">
-	<a href="{{site.baseurl}}/docs/board/assets/assembly/esp32_taped_2.jpg"><img src="{{site.baseurl}}/docs/board/assets/assembly/esp32_taped_2.jpg"></a>
-</figure>
-
-You can have the tape cover one side of the module. Solder the side you can, and the module should be mounted securely enough to remove the tape. Make sure to solder the other side that was previously under the tape.
-
-<figure style="max-width: 400px;" class="align-center">
-	<a href="{{site.baseurl}}/docs/board/assets/assembly/esp32_soldered.jpg"><img src="{{site.baseurl}}/docs/board/assets/assembly/esp32_soldered.jpg"></a>
-</figure>
-
-
-## Solder the Shift Register
-
-<figure style="max-width: 400px;" class="align-center">
-	<a href="{{site.baseurl}}/docs/board/assets/assembly/shift_packaged.jpg"><img src="{{site.baseurl}}/docs/board/assets/assembly/shift_packaged.jpg"></a>
-</figure>
-
-Next up is the shift register `U2`. Begin by adding solder to one of the corner pads, and while keeping the solder liquid bring the IC onto the footprint and into position.
-
+Use a hot air station to help remove mistakes and try again if it's not working out.
 {: .notice--warning}
-This device is "upside down" relative to the top of the board. Make sure the IC is correctly positioned with the Pin 1 marking aligned with the white dot on the board.
 
+
+## Start with the LEDs
+
+| D1 D3 | EKINGLUX | E6C1206VGAC1UDA |
+
+<figure>
+	<img src="{{site.baseurl}}/docs/board/assembly_assets/D1_D2.jpg"/>
+</figure>
+
+### How to tell which way
+
+When working with LEDs, it matters which way you put them on. The footprints will have a bit of silkscreen around them that indicates where the negative terminal should be. The figure below shows how all the markings should line up.
+
+<figure>
+	<img style="display: block;margin-left: auto;margin-right: auto;max-width: 300px;" src="{{site.baseurl}}/docs/board/assembly_assets/D1_placement.png"/>
+</figure>
+
+The datasheet for the LEDs have some more details:
+
+<figure >
+	<img style="display: block;margin-left: auto;margin-right: auto;" src="{{site.baseurl}}/docs/board/assembly_assets/D1_datasheet.jpg"/>
+</figure>
+
+<figure >
+	<img style="display: block;margin-left: auto;margin-right: auto;" src="{{site.baseurl}}/docs/board/assembly_assets/D1_closeup.jpg"/>
+</figure>
+
+<figure >
+	<img style="display: block;margin-left: auto;margin-right: auto;" src="{{site.baseurl}}/docs/board/assembly_assets/D1_soldered.jpg"/>
+</figure>
+
+## Ceramic Capacitors
+
+<figure >
+	<img style="display: block;margin-left: auto;margin-right: auto;" src="{{site.baseurl}}/docs/board/assembly_assets/C1_C2_C3_C4.jpg"/>
+</figure>
+
+<figure >
+	<img style="display: block;margin-left: auto;margin-right: auto;" src="{{site.baseurl}}/docs/board/assembly_assets/C1_soldered_2.jpg"/>
+</figure>
+
+## General Purpose Diode
+
+<figure >
+	<img style="display: block;margin-left: auto;margin-right: auto;" src="{{site.baseurl}}/docs/board/assembly_assets/D2.jpg"/>
+</figure>
+
+## Resistors
+<figure >
+	<img style="display: block;margin-left: auto;margin-right: auto;" src="{{site.baseurl}}/docs/board/assembly_assets/R1_R2.jpg"/>
+</figure>
+
+
+## Micro USB connector
+<figure >
+	<img style="display: block;margin-left: auto;margin-right: auto;" src="{{site.baseurl}}/docs/board/assembly_assets/J2.jpg"/>
+</figure>
+
+
+## Electrolytic Capacitors
 <figure class="half">
-    <a href="{{site.baseurl}}/docs/board/assets/assembly/shift_soldered.jpg"><img src="{{site.baseurl}}/docs/board/assets/assembly/shift_soldered.jpg"></a>
-    <a href="{{site.baseurl}}/docs/board/assets/assembly/shift_soldered_2.jpg"><img src="{{site.baseurl}}/docs/board/assets/assembly/shift_soldered_2.jpg"></a>
+	<img style="display: block;margin-left: auto;margin-right: auto;" src="{{site.baseurl}}/docs/board/assembly_assets/J5.jpg"/>
 </figure>
+## Header Pins
 
-
-## Solder the Micro USB Connector
-
-<figure style="max-width: 400px;" class="align-center">
-	<a href="{{site.baseurl}}/docs/board/assets/assembly/usb_packaged.jpg"><img src="{{site.baseurl}}/docs/board/assets/assembly/usb_packaged.jpg"></a>
+## Screw Terminal
+<figure >
+	<img style="display: block;margin-left: auto;margin-right: auto;" src="{{site.baseurl}}/docs/board/assembly_assets/J5.jpg"/>
 </figure>
+## Cleaning
 
-Here is where the flux will really come in handy. The pins on the USB connector are the smallest pads on the board, and will be the hardest.
-
-Make sure to add just enough solder on the strain releif through hole pads to add strenght.
-
-{: .notice--warning}
-If too much solder is added to the strain relief pads, it can make inserting the micro USB cable difficult or even impossible
-
-<figure class="half">
-    <a href="{{site.baseurl}}/docs/board/assets/assembly/usb_soldered.jpg"><img src="{{site.baseurl}}/docs/board/assets/assembly/usb_soldered.jpg"></a>
-    <a href="{{site.baseurl}}/docs/board/assets/assembly/usb_soldered_2.jpg"><img src="{{site.baseurl}}/docs/board/assets/assembly/usb_soldered_2.jpg"></a>
-</figure>
-
-## Solder the Voltage Regulator
-
-<figure style="max-width: 400px" class="align-center">
-	<a href="{{site.baseurl}}/docs/board/assets/assembly/vreg_packaged.jpg"><img src="{{site.baseurl}}/docs/board/assets/assembly/vreg_packaged.jpg"></a>
-</figure>
-
-The voltage regulator `U1` is up next. This part should be straight forward, as the pins are larger than the others.
-
-<figure style="max-width: 400px" class="align-center">
-	<a href="{{site.baseurl}}/docs/board/assets/assembly/vreg_soldered.jpg"><img src="{{site.baseurl}}/docs/board/assets/assembly/vreg_soldered.jpg"></a>
-</figure>
-
-## Solder the Passives
-
-<figure class="third">
-    <a href="{{site.baseurl}}/docs/board/assets/assembly/res_packaged.jpg"><img src="{{site.baseurl}}/docs/board/assets/assembly/res_packaged.jpg"></a>
-    <a href="{{site.baseurl}}/docs/board/assets/assembly/cap_1_packaged.jpg"><img src="{{site.baseurl}}/docs/board/assets/assembly/cap_1_packaged.jpg"></a>
-    <a href="{{site.baseurl}}/docs/board/assets/assembly/cap_10_packaged.jpg"><img src="{{site.baseurl}}/docs/board/assets/assembly/cap_10_packaged.jpg"></a>
-    <figcaption>10kΩ, 1μF, 10μF</figcaption>
-</figure>
-
-We're almost there. For all of these parts there is no wrong direction for how they are attached.
-
-Start with the resistors, which are all the same value: 10 kΩ.
-
-<figure style="max-width: 400px" class="align-center">
-	<a href="{{site.baseurl}}/docs/board/assets/assembly/res_soldered.jpg"><img src="{{site.baseurl}}/docs/board/assets/assembly/res_soldered.jpg"></a>
-</figure>
-
-There are four 1μF Capacitors, and one 10μF: `C3`
-
-<figure class="half">
-    <a href="{{site.baseurl}}/docs/board/assets/assembly/cap_1_soldered.jpg"><img src="{{site.baseurl}}/docs/board/assets/assembly/cap_1_soldered.jpg"></a>
-    <a href="{{site.baseurl}}/docs/board/assets/assembly/cap_10_soldered.jpg"><img src="{{site.baseurl}}/docs/board/assets/assembly/cap_10_soldered.jpg"></a>
-</figure>
-
-## Solder the LEDs
-
-<figure style="max-width: 400px" class="align-center">
-	<a href="{{site.baseurl}}/docs/board/assets/assembly/led_packaged.jpg"><img src="{{site.baseurl}}/docs/board/assets/assembly/led_packaged.jpg"></a>
-</figure>
-
-{: .notice--warning}
-The LEDs are "polarized", which means they have a right way and a wrong way of being attached to the board.
-
-### How to tell which way to attach the LEDs
-The LEDs will have a small green line that can be seen at an angle inside the plastic dome of the LED. This marks the anode, or the negative terminal. This green line should be on the side of the footprint with the silkscreen marking.
-
-<figure style="max-width: 400px" class="align-center">
-	<a href="{{site.baseurl}}/docs/board/assets/assembly/led_example.jpg"><img src="{{site.baseurl}}/docs/board/assets/assembly/led_example.jpg"></a>
-</figure>
-
-<figure class="half">
-    <a href="{{site.baseurl}}/docs/board/assets/assembly/led_soldered.jpg"><img src="{{site.baseurl}}/docs/board/assets/assembly/led_soldered.jpg"></a>
-    <a href="{{site.baseurl}}/docs/board/assets/assembly/led_soldered_2.jpg"><img src="{{site.baseurl}}/docs/board/assets/assembly/led_soldered_2.jpg"></a>
-</figure>
+## Testing
 
 
-## Solder the Buttons
-
-<figure class="half">
-    <a href="{{site.baseurl}}/docs/board/assets/assembly/button_1_packaged.jpg"><img src="{{site.baseurl}}/docs/board/assets/assembly/button_1_packaged.jpg"></a>
-    <a href="{{site.baseurl}}/docs/board/assets/assembly/button_2_packaged.jpg"><img src="{{site.baseurl}}/docs/board/assets/assembly/button_2_packaged.jpg"></a>
-</figure>
-
-These parts should be pretty straigh forward. They don't have a specifc direction.
-
-<figure class="half">
-    <a href="{{site.baseurl}}/docs/board/assets/assembly/button_1_soldered.jpg"><img src="{{site.baseurl}}/docs/board/assets/assembly/button_1_soldered.jpg"></a>
-    <a href="{{site.baseurl}}/docs/board/assets/assembly/button_2_soldered.jpg"><img src="{{site.baseurl}}/docs/board/assets/assembly/button_2_soldered.jpg"></a>
-</figure>
-
-## Solder the PCB Headers
-
-<figure style="max-width: 400px" class="align-center">
-	<a href="{{site.baseurl}}/docs/board/assets/assembly/header_packaged.jpg"><img src="{{site.baseurl}}/docs/board/assets/assembly/header_packaged.jpg"></a>
-</figure>
-
-This will be the 4 pin PCB header used to load new Arduino sketches to the ESP-WROOM-02 module, and read any debug messages on the serial terminal.
-
-<figure class="half">
-    <a href="{{site.baseurl}}/docs/board/assets/assembly/header_soldered.jpg"><img src="{{site.baseurl}}/docs/board/assets/assembly/header_soldered.jpg"></a>
-    <a href="{{site.baseurl}}/docs/board/assets/assembly/header_soldered_2.jpg"><img src="{{site.baseurl}}/docs/board/assets/assembly/header_soldered_2.jpg"></a>
-</figure>
-
-## Cleaning Up
-
-<figure style="max-width: 400px" class="align-center">
-	<a href="{{site.baseurl}}/docs/board/assets/assembly/unclean_board.jpg"><img src="{{site.baseurl}}/docs/board/assets/assembly/unclean_board.jpg"></a>
-</figure>
-
-After all that soldering and flux, it's time to give the board a quick clean. If you have a preferred cleaning agent, go ahead and use that. Some common ways of cleaning PCBs is to use an alcohol like isopropyl or denatured alcohol. I use denatured alcohol, since it is cheaper than isopropyl.
-
-<figure style="max-width: 400px" class="align-center">
-	<a href="{{site.baseurl}}/docs/board/assets/assembly/cleaning.jpg"><img src="{{site.baseurl}}/docs/board/assets/assembly/cleaning.jpg"></a>
-</figure>
-
-A toothbrush makes a good tool to get inbetween all the nooks and crannies of the parts on the board. I've used the hot air station to heat up the neck of the toothbrush to bend it to be more comfortable to use.
-
-<figure style="max-width: 400px" class="align-center">
-	<a href="{{site.baseurl}}/docs/board/assets/assembly/clean_board.jpg"><img src="{{site.baseurl}}/docs/board/assets/assembly/clean_board.jpg"></a>
-</figure>
 
 # Using a Stencil
 
