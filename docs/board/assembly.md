@@ -142,7 +142,7 @@ Like the ceramic capacitors, these can go on any way. They will be used to limit
 
 ## Micro USB connector
 
-| Ref | MF | MPN |
+| J2 | Korean Hroparts Elec | U-F-M5DD-Y-L |
 
 <figure >
 	<img style="display: block;margin-left: auto;margin-right: auto;" src="{{site.baseurl}}/docs/board/assembly_assets/J2.jpg"/>
@@ -207,7 +207,7 @@ These components have small lettering on them that be used to tell them apart. I
 
 ## Header Pins
 
-| Ref | MF | MPN |
+| J3 J4 | XFCN | PZ254V-12-6P |
 
 <figure >
 	<img style="display: block;margin-left: auto;margin-right: auto;" src="{{site.baseurl}}/docs/board/assembly_assets/J3_J4.jpg"/>
@@ -224,7 +224,7 @@ I find it the easiest to tack one pin and use that to align the part to the boar
 
 ## Output Selection Pins
 
-| Ref | MF | MPN |
+| J8 J9 | XFCN | PZ254V-12-6P |
 
 <figure >
 	<img style="display: block;margin-left: auto;margin-right: auto;" src="{{site.baseurl}}/docs/board/assembly_assets/J8_J9.jpg"/>
@@ -242,7 +242,7 @@ Take a pair of snips to chamfer 2 corners, or a soldering iron to heat and pull 
 
 ## Screw Terminal
 
-| Ref | MF | MPN |
+| J5 | Ningbo Kangnex Elec | WJ124-3.81-2P |
 
 <figure >
 	<img style="display: block;margin-left: auto;margin-right: auto;" src="{{site.baseurl}}/docs/board/assembly_assets/J5.jpg"/>

@@ -21,10 +21,23 @@ The micro USB connector makes it easy to use a standard 5V AC to DC converter an
 ## Adding bare wires
 If you would like to use the screw terminals to attach power, simply strip about 3-5 mm and add solder to tin the wires.
 
+## Changing Output
+Each side of the board's power rails can be configured to either
 
-| **Techincal Specs**  |  |
+| :-:  | :-  |
+| Vin  | This will be the screw termina's voltage, minus about 0.7 V from the diode. |
+| 5V   | Micro USB voltage or regulated from the screw terminal. Useful for Atmel and Microchip microcontrollers and some modules. |
+| 3.3V | Regulated from either USB power adapter or screw terminal. Useful for ESP and ARM microcontrollers. |
+
+## Techincal Specs
+
 |:---:|:-|
 | Screw Terminal Max Voltage | 20 V (DC) |
 | Screw Terminal Min Voltage | 6.2 V (DC) |
 | 3.3V Regulator Max Current | 1 A |
 | 5.0V Regulator Max Current | 1 A |
+
+<h2>Want To Learn More?</h1>
+ - [Read the Docs]()
+ - [See the Image Gallery]
+ - [Buy on Tindie]
