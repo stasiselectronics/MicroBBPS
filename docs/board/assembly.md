@@ -15,6 +15,10 @@ Once you've gotten your parts kit opened, it's time to assemble your very own Mi
 
 The components and layout are identical between the solderless version and the integrated version, except for the lack of pin headers J3 & J4 on the integrated version.
 
+If you are building your own right from the gerbers, or if you need to replace any of the components, I have tried my best to make sure there are plentiful replacements & alternatives available on the open parts market. Check the [Bill of Materials]({{site.baseurl}}/docs/board/components) for more information on what components were originally selected.
+
+This board has a combination of both through hole and surface mount components.
+
 ## Tools Needed
 Before you begin soldering, make sure to gather your tools. It's no fun to have your hands tied up and then realize the next tool you need is packed away somewhere (or worse, at the store!).
 
@@ -94,6 +98,8 @@ Here we can see that green marking shows which way to mount the component on the
 
 ## Ceramic Capacitors
 
+| C1 C2 C3 C4 | YAGEO | CC1206KKX7R9BB224 |
+
 <figure >
 	<img style="display: block;margin-left: auto;margin-right: auto;" src="{{site.baseurl}}/docs/board/assembly_assets/C1_C2_C3_C4.jpg"/>
 </figure>
@@ -105,6 +111,8 @@ Next up are the 200nF ceramic capacitors `C1, C2, C3, C4`. These components don'
 </figure>
 
 ## General Purpose Diode
+
+| D2 | Diodes Incorporated | S1G-13-F |
 
 <figure >
 	<img style="display: block;margin-left: auto;margin-right: auto;" src="{{site.baseurl}}/docs/board/assembly_assets/D2.jpg"/>
@@ -119,6 +127,9 @@ On the top of the component, a small line will indicate the negative terminal of
 </figure>
 
 ## Resistors
+
+| R1 R2 | YAGEO | RC1206JR-0710KL |
+
 <figure >
 	<img style="display: block;margin-left: auto;margin-right: auto;" src="{{site.baseurl}}/docs/board/assembly_assets/R1_R2.jpg"/>
 </figure>
@@ -130,6 +141,9 @@ Like the ceramic capacitors, these can go on any way. They will be used to limit
 </figure>
 
 ## Micro USB connector
+
+| Ref | MF | MPN |
+
 <figure >
 	<img style="display: block;margin-left: auto;margin-right: auto;" src="{{site.baseurl}}/docs/board/assembly_assets/J2.jpg"/>
 </figure>
@@ -140,6 +154,10 @@ This component will be the hardest to hand solder to the board. If you have a ho
 To start, insert the component without any solder added to the footprint. Add a bit of solder to the larger mounting pads on the side. Use that to help fix the orientation so that the small interior pads are aligned properlly.
 
 ## Electrolytic Capacitors
+
+| C5 C7 | 10µF 16V | Panasonic | EEEHA1C100R |
+| C6 C8 | 47µF 10V | ROQANG | RVT1A470M0405 |
+
 <figure class="half">
 	<img style="display: block;margin-left: auto;margin-right: auto;" src="{{site.baseurl}}/docs/board/assembly_assets/C6 C8.jpg"/>
   <img style="display: block;margin-left: auto;margin-right: auto;" src="{{site.baseurl}}/docs/board/assembly_assets/C5_C7.jpg"/>
@@ -158,35 +176,124 @@ Here the black bar represents the negative terminal. The footrpint will have a `
 
 ## Voltage Regulators
 
+These components have small lettering on them that be used to tell them apart. If you have trouble reading them, you can try using the zoom on a digital camera and light directed at an angle to catch the lettering.
+
+<figure class="half" >
+	<img style="display: block;margin-left: auto;margin-right: auto;" src="{{site.baseurl}}/docs/board/assembly_assets/U1.jpg"/>
+  <img style="display: block;margin-left: auto;margin-right: auto;" src="{{site.baseurl}}/docs/board/assembly_assets/U2.jpg"/>
+</figure>
+
+<figure >
+	<img style="display: block;margin-left: auto;margin-right: auto;" src="{{site.baseurl}}/docs/board/assembly_assets/U1_U3_Soldered.jpg"/>
+</figure>
+
 ### 5 V
+
+| U1 | ON Semiconductor | NCP1117ST50T3G |
+
+<figure >
+	<img style="display: block;margin-left: auto;margin-right: auto;max-height:200px;width:auto;height:auto;" src="{{site.baseurl}}/docs/board/assembly_assets/5V_datasheet.jpg"/>
+</figure>
 
 ### 3.3 V
 
+| U3 | ON Semiconductor | NCP1117ST33T3G |
+
+<figure >
+	<img style="display: block;margin-left: auto;margin-right: auto; max-height:200px;width:auto;height:auto" src="{{site.baseurl}}/docs/board/assembly_assets/3V3_datasheet.jpg"/>
+</figure>
+
+
+
 ## Header Pins
+
+| Ref | MF | MPN |
+
 <figure >
 	<img style="display: block;margin-left: auto;margin-right: auto;" src="{{site.baseurl}}/docs/board/assembly_assets/J3_J4.jpg"/>
 </figure>
 
+For the solderless version, there will be two 2x3 male PCB Headers that will be used to connect to the breadboard. One trick can be to insert the headers into the breadboard, and place the board over and align in the PCB headers. This can help hold the headers stay in place as you solder them.
+
+I find it the easiest to tack one pin and use that to align the part to the board, then finish up with the rest of the joints.
+
+<figure class ="half">
+	<img style="display: block;margin-left: auto;margin-right: auto;" src="{{site.baseurl}}/docs/board/assembly_assets/J3_soldered_1.jpg"/>
+  <img style="display: block;margin-left: auto;margin-right: auto;" src="{{site.baseurl}}/docs/board/assembly_assets/J3_soldered_2.jpg"/>
+</figure>
+
 ## Output Selection Pins
+
+| Ref | MF | MPN |
+
 <figure >
 	<img style="display: block;margin-left: auto;margin-right: auto;" src="{{site.baseurl}}/docs/board/assembly_assets/J8_J9.jpg"/>
 </figure>
 
+These are just 2x3 male PCB Headers that have had two corner pins taken off to create the unique T shape. This part allows for the output to be selected by rotating a 2 pin jumper.
+
+**Make your own**
+Take a pair of snips to chamfer 2 corners, or a soldering iron to heat and pull out two corner pins.
+{: .notice--success}
+
+<figure >
+	<img style="display: block;margin-left: auto;margin-right: auto;" src="{{site.baseurl}}/docs/board/assembly_assets/J8_soldered_2.jpg"/>
+</figure>
+
 ## Screw Terminal
+
+| Ref | MF | MPN |
+
 <figure >
 	<img style="display: block;margin-left: auto;margin-right: auto;" src="{{site.baseurl}}/docs/board/assembly_assets/J5.jpg"/>
 </figure>
 
+The screw terminal is the largest component on the board, and should be straight forward to mount. Here a larger soldering iron tip and thicker solder will come in handy, but a smaller one will still get the job done.
+
+<figure >
+	<img style="display: block;margin-left: auto;margin-right: auto;" src="{{site.baseurl}}/docs/board/assembly_assets/J8_soldered_3.jpg"/>
+</figure>
+
 ## Cleaning
+**Double check all the solder joints and touch up any that need some attention.** You should clean the board as the last step, so now's the chance to fix mistakes. (Or you might have to clean the board twice, the horror!)
+
 <figure >
 	<img style="display: block;margin-left: auto;margin-right: auto;" src="{{site.baseurl}}/docs/board/assembly_assets/cleaning_1.jpg"/>
 </figure>
+
+Now that everything is mounted to the board, it deserves a good clean to wash off the flux residue and any other gunk. A tooth brush can make a decent tool to use, and its neck can be bent with some heat from a hot air station.
+
+I use denatured ethenol to clean my boards. Another popular options is to use Isopropyl Alcohol. I have heard about using soap and water, but make sure to double check which options is best for you.
+
+**Open Baths of Flamable Gas and Liquid**
+Cleaning with an alcohol based solution will create a fire hazard. Be sure to follow the below safety measures and do so at your own risk.
+{: .notice--danger}
+
+ - Cleaning with an alcohol based solution will create a fire hazard.<br>
+ - Be sure there are no sources of flame or spark nearby.<br>
+ - Discharge any static charge you may carry.<br>
+ - Work in an a well ventilated area.<br>
+ - Wear gloves and splash goggles<br>
+
+If you have an ultrasonic cleaner, check with the manufacturer's recomendations or your preferred methods.
+
 
 ## Testing
 <figure >
 	<img style="display: block;margin-left: auto;margin-right: auto;" src="{{site.baseurl}}/docs/board/assembly_assets/assembly_3.jpg"/>
 </figure>
 
+Now that the board is fully mounted and cleaned, it's time test it out.
+
+Simply plugging in a 5v Micro USB cable into the connector should show both LEDs illuminated. For further testing, a DC voltage (min 5.5V, max 20V) on the screw terminal should also show both LEDs illuminated.
+
+If one or both LEDs are off, check that they are orientated correctly.
+[how to check]({{site.baseurl}}/docs/board/assembly/#how-to-tell-which-way-is-which)
+
+
+# Finishing Up
+
+I hope
 
 
 # Using a Stencil
@@ -197,7 +304,7 @@ Chances are that if you are using a stencil, this board is not your first time.
 
 The general process is to position the stencil so that it is flush against the PCB and the stencil aligns perfectly with the pads.
 
-## Scrape the solder paste
+## Scrape The Solder Paste
 
 Using a hard piece of plastic or metal, scrape solder paste across all the holes in the stencil with as few movements as possible. Make sure all pads have solder paste on them.
 
@@ -205,11 +312,11 @@ Using a hard piece of plastic or metal, scrape solder paste across all the holes
 
 If you're using a hot air station to heat the board up, avoid placing the buttons. The plastic in the buttons can melt under the heat of a hot air station.
 
-## Heat until the solder flows
+## Heat Until The Solder Flows
 
 Using the hot air station, apply heat to a small area of the board. Focus on one area at a time, looking for the solder paste to liquefy and become shiny.
 
-## Hand Solder remaining Components
+## Hand Solder Remaining Components
 
 If you left the buttons to hand solder, now is the time to add them.
 
