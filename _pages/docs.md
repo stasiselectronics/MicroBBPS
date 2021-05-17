@@ -1,6 +1,8 @@
 ---
 permalink: /docs/
-title: "Welcome to the documentation!"
+title: "docs"
+headtitle: "Welcome to the documentation!"
+layout: customTitle
 author_profile: false
 sidebar:
   nav: "docs"

@@ -16,9 +16,7 @@
 title: Micro Breadboard Power Supply
 email:
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Micro USB connected breadbaord power supply released as an Open Source Hardware Project. Easily bring power to your next circuit experiment.
 #twitter_username: username
 #github_username: username
 baseurl: /MicroBBPS
@@ -64,7 +62,7 @@ author:
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://www.instagram.com/stasis.electronics/"
+      url: "https://github.com/stasiselectronics"
     - label: "Store"
       icon: "fas fa-store"
       url: "https://www.tindie.com/stores/stasis/items/"

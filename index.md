@@ -1,5 +1,6 @@
 ---
-title: "A better way to power your experiments"
+headtitle: "A better way to power your experiments"
+title: "Home"
 layout: splash
 date: 2016-03-23T11:48:41-04:00
 header:

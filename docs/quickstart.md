@@ -37,7 +37,7 @@ Each side of the board's power rails can be configured to either
 | 3.3V Regulator Max Current | 1 A |
 | 5.0V Regulator Max Current | 1 A |
 
-<h2>Want To Learn More?</h1>
- - [Read the Docs]()
- - [See the Image Gallery]
- - [Buy on Tindie]
+<h2>Want To Learn More?</h2>
+ - [Read the Docs]({{site.baseurl}}/docs/)
+ - [See the Image Gallery]({{site.baseurl}}/gallery/)
+ - [Buy on Tindie](https://www.tindie.com/products/stasis/micro-breadboard-power-supply/)
