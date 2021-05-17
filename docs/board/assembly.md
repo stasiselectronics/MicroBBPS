@@ -38,7 +38,7 @@ Before you begin soldering, make sure to gather your tools. It's no fun to have 
 | **Stencil** | A piece of metal with holes cut out for where the solder paste can be scraped over. Most PCB fabricators offer stencils for a relatively small fee.
 
 
-Using a stencil? [Jump to Instructions]({{site.baseurl}}/docs/board/assembly/#using-a-stencil)
+Using a stencil? [Jump to Instructions]({{site.baseurl}}/docs/board/stencil/)
 
 ## Getting Started
 
@@ -176,7 +176,7 @@ Here the black bar represents the negative terminal. The footrpint will have a `
 
 ## Voltage Regulators
 
-These components have small lettering on them that be used to tell them apart. If you have trouble reading them, you can try using the zoom on a digital camera and light directed at an angle to catch the lettering.
+These components have small lettering on them that can be used to tell them apart. If you have trouble reading them, you can try using the zoom on a digital camera and light directed at an angle to catch the lettering.
 
 <figure class="half" >
 	<img style="display: block;margin-left: auto;margin-right: auto;" src="{{site.baseurl}}/docs/board/assembly_assets/U1.jpg"/>
@@ -267,9 +267,8 @@ I use denatured ethenol to clean my boards. Another popular options is to use Is
 
 **Open Baths of Flamable Gas and Liquid**
 Cleaning with an alcohol based solution will create a fire hazard. Be sure to follow the below safety measures and do so at your own risk.
-{: .notice--danger}
 
- - Cleaning with an alcohol based solution will create a fire hazard.<br>
+{: .notice--danger}
  - Be sure there are no sources of flame or spark nearby.<br>
  - Discharge any static charge you may carry.<br>
  - Work in an a well ventilated area.<br>
@@ -290,34 +289,13 @@ Simply plugging in a 5v Micro USB cable into the connector should show both LEDs
 If one or both LEDs are off, check that they are orientated correctly.
 [how to check]({{site.baseurl}}/docs/board/assembly/#how-to-tell-which-way-is-which)
 
+## Finishing Up
 
-# Finishing Up
-
-I hope
+Congratulations on building your own Micro Breadboard Power Supply! I hope the documentation has been useful. If not, let me know and I'll help fix it!
 
 
-# Using a Stencil
+ - Check out the [Schematics]({{site.baseurl}}/docs/board/schematics/) to read more about how the design works.
+ - See more [photos]({{site.baseurl}}/gallery/) from the development.
+ - Fork the [source files](https://github.com/stasiselectronics/MicroBBPS) to modify the design.
+ - Ready to build your own? Buy yours on [Tindie](https://www.tindie.com/products/stasis/micro-breadboard-power-supply/).
 
-If you have a stencil made by your PCB fabricator, (or maybe you have a way of fabricating your own!). You can use that to quickly apply solder paste to the pads and get things soldered real quick.
-
-Chances are that if you are using a stencil, this board is not your first time.
-
-The general process is to position the stencil so that it is flush against the PCB and the stencil aligns perfectly with the pads.
-
-## Scrape The Solder Paste
-
-Using a hard piece of plastic or metal, scrape solder paste across all the holes in the stencil with as few movements as possible. Make sure all pads have solder paste on them.
-
-## Place SMD Components
-
-If you're using a hot air station to heat the board up, avoid placing the buttons. The plastic in the buttons can melt under the heat of a hot air station.
-
-## Heat Until The Solder Flows
-
-Using the hot air station, apply heat to a small area of the board. Focus on one area at a time, looking for the solder paste to liquefy and become shiny.
-
-## Hand Solder Remaining Components
-
-If you left the buttons to hand solder, now is the time to add them.
-
-Attach the PCB Headers so that you can upload new Arduino sketches to the ESP-WROOM-02 WiFi module.
