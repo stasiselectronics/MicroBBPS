@@ -1,11 +1,13 @@
 # MicroBBPS
-<h3>Breadboard Powersupply</h3>
+<h3>Breadboard Power Supply</h3>
+<BR CLEAR=”left” />
+<img src="https://stasiselectronics.github.io/MicroBBPS/assets/images/gallery/IMG_9500.jpg" align="right" width="50%"/>
 
-A selectable power supply perfect for powering experimental circuits with a micro USB cable or with a 20V max DC source on the screw terminal.
+A small, Micro USB connected power supply designed to fit onto the power rails of a solderless breadboard.
 
-Select between LDO Linear regulated 3.3V, 5V, or Screw Terminal input for either left or right side.
+For each side, you can select between 3.3 & 5.0 Volt linear regulators, or the input voltage at the screw terminal. 
 
-The integrated version adds 26 breadboard rows and 2 continuous power rails. Turn those prototypes into something more permanent with an easy microUSB power connector.
+The integrated version adds 26 breadboard rows and 2 continuous power rails. So you can turn those prototypes into something more permanent with an easy microUSB power connector.
 
 <h4><a href="https://github.com/stasiselectronics/MicroBBPS/tree/variant-integrated">Check out the integrated version's repository branch</a></h4>
 
@@ -26,15 +28,30 @@ This open source hardware project is developed using KiCAD and inkscape. It exis
 
 ## Status
 
-This project is under active development, with a focus shifting to documentaion.
-The PCBA is currently at Revision A02 with boards and parts on order.
+Assemblies and Parts Kits are still available to purchase on Tindie, however current stock is starting to run low.
 
-I plan on attempting to make A02 boards available to purchase on [Tindie](https://www.tindie.com/stores/stasis/)
+[Order Yours Today!](https://www.tindie.com/products/stasis/micro-breadboard-power-supply/)
+
+The PCBA is currently at Revision A02. The tag for this release contians all the design files as they were when fabrication files were generated.
 
 ## Updates
 If you would like to keep up to date with this project, be sure to check out my instagram
 
 <h3><a href="https://www.instagram.com/stasis.electronics/">stasis.electronics</a></h3>
+
+### A02 Fabrication
+
+After incorporating the design changes from the first revision, the second revision came out great! 
+
+There are still a few details to try and adjust for any future fabrication.
+- Silkscreen adjustments for better image fidelity
+- Still have some mechanical rocking on the solderless version when inserted into a breadboard
+
+Some of the major changes between on A02 from A01 are
+- Smaller board shape
+- Changed LEDs to 1206 for better part availability and easier hand soldering
+- Larger silkscreen features
+- Integrated version
 
 ### A01 Fabrication
 Here are some photos of the first board revision
