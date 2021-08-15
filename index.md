@@ -1,6 +1,7 @@
 ---
 headtitle: "A better way to power your experiments"
 title: "Home"
+custom_title: "MicroBBPS"
 layout: splash
 date: 2016-03-23T11:48:41-04:00
 header:
