@@ -31,7 +31,7 @@ Before you begin soldering, make sure to gather your tools. It's no fun to have 
 
 | Optional  |  |
 |:---:|:-|
-| **Vice** | Something to hold down the PCB can be nice. There are a few different PCB vises out there, or try and DIY something taht works.
+| **Vice** | Something to hold down the PCB can be nice. There are a few different PCB vises out there, or try and DIY something that works.
 | **Magnification** | Ideally a stereo microscope or zoom camera, but a magnifying glass can be better than no magnifaction. Young eyes help too, but those can't be bought.
 | **Hot Air Station** | This makes removing parts a snap if mistakes were made. It can also be used to position parts using the liquid solder's surface tension.
 | **Solder Paste** | Using a hot air station with solder paste can make assembly a breeze.
